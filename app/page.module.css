@@ -1,0 +1,163 @@
+.Container{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.NavBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+}
+
+.Logo{
+    color: #204EA5;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.blueText{
+    color: #24DA8B;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 700;
+    gap: 24px;
+    align-self: center;
+}
+
+.menu p{
+    cursor: pointer;
+}
+
+.menuLarge{
+    display: flex;
+}
+
+.menuSmall{
+    display: none;
+}
+
+.buttonBox{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.button{
+    border: 2px solid #204EA5;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.noFill{
+    color: #204EA5;
+}
+
+.Fill{
+    background-color: #204EA5;
+    color: white;
+}
+
+.heroPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    gap: 48px;
+    padding: 140px;
+}
+
+.doctor{
+    width: 40vw;
+    height: fit-content;
+}
+
+.heroLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+
+.heroRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.topLine{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 6px;
+}
+
+
+.headingline{
+    font-size:48px;
+    font-weight:bold;
+    color: #204EA5
+}
+
+.rect{
+    width: 18px;
+    height: 4px;
+    background-color: #24DA8B;
+    border-radius: 4px;
+    align-self: center;
+}
+
+.heroTitle{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Mobile Device Responsiveness*/
+@media screen and (min-width:320px) and (max-width:768px) {
+    .menuLarge{
+        display: none;
+    }
+
+    .menuSmall{
+        display: flex;
+    }
+
+    .topLine{
+        flex-direction: column-reverse;
+    }
+
+    .rect{
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    .heroPage{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroLeft{
+        align-items: center;
+    }
+
+    .doctor{
+        width: 70vw;
+    }
+}
